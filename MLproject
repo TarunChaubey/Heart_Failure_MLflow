@@ -1,0 +1,11 @@
+name: Heart_failure_Classifiction_MLflow
+
+conda_env: conda.yaml
+
+entry_points:
+    main:
+        parameters:
+            C_: {type: float, default: 4}
+            iter: {type: float, default: 50}
+        command: "python main.py"
+        # command: "python train_predict_2.py --batch_size={batch_size} --train_steps={train_steps}"
